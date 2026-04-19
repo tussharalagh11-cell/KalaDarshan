@@ -15,33 +15,87 @@ const links = [
 export default function Nav() {
   const [open, setOpen] = useState(false);
   return (
-    <nav style={{position:"fixed",top:0,left:0,right:0,zIndex:200,display:"flex",alignItems:"center",justifyContent:"space-between",padding:"20px 48px",background:"linear-gradient(to bottom,rgba(1,2,8,.96),transparent)",backdropFilter:"blur(6px)"}}>
-      <Link href="/" style={{fontFamily:"'Cinzel Decorative',serif",fontSize:".95rem",color:"#c8a84c",letterSpacing:".18em",textDecoration:"none",textShadow:"0 0 24px rgba(200,168,76,.35)"}}>
-        KALA DARSHAN
-        <span style={{display:"block",fontFamily:"'Cinzel',serif",fontSize:".45rem",letterSpacing:".25em",color:"#3a5870",marginTop:"2px",fontWeight:400}}>BY TAI ANALYTICS</span>
-      </Link>
-      {/* Desktop */}
-      <ul style={{display:"flex",gap:"24px",listStyle:"none",margin:0,padding:0}} className="hidden-mobile">
-        {links.map(l=>(
-          <li key={l.href}>
-            <Link href={l.href} style={{fontFamily:"'Cinzel',serif",fontSize:".58rem",letterSpacing:".22em",color:"rgba(232,240,248,.45)",textDecoration:"none",transition:"color .3s"}}
-              onMouseEnter={e=>(e.currentTarget.style.color="#c8a84c")}
-              onMouseLeave={e=>(e.currentTarget.style.color="rgba(232,240,248,.45)")}
-            >{l.label}</Link>
-          </li>
-        ))}
-      </ul>
-      {/* Mobile burger */}
-      <button onClick={()=>setOpen(!open)} style={{display:"none",background:"none",border:"none",color:"#c8a84c",fontSize:"1.4rem",cursor:"pointer"}} className="show-mobile">☰</button>
-      {open && (
-        <div style={{position:"fixed",inset:0,background:"rgba(1,2,8,.97)",zIndex:300,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:"32px"}}>
-          <button onClick={()=>setOpen(false)} style={{position:"absolute",top:"24px",right:"24px",background:"none",border:"none",color:"#c8a84c",fontSize:"1.6rem",cursor:"pointer"}}>✕</button>
+    <>
+      <nav style={{
+        position:"fixed",top:0,left:0,right:0,zIndex:200,
+        display:"flex",alignItems:"center",justifyContent:"space-between",
+        padding:"18px 48px",
+        background:"linear-gradient(to bottom,rgba(1,2,8,0.98) 60%,transparent)",
+        backdropFilter:"blur(8px)",
+      }}>
+        {/* Logo */}
+        <Link href="/" style={{textDecoration:"none",display:"flex",flexDirection:"column",gap:"3px"}}>
+          <span style={{
+            fontFamily:"'Cinzel Decorative',serif",
+            fontSize:"1.15rem",
+            fontWeight:400,
+            color:"#c8a84c",
+            letterSpacing:".15em",
+            textShadow:"0 0 20px rgba(200,168,76,0.3)",
+            lineHeight:1,
+          }}>KALA DARSHAN</span>
+          <span style={{
+            fontFamily:"'Cinzel',serif",
+            fontSize:"0.52rem",
+            letterSpacing:".35em",
+            color:"rgba(138,112,48,0.9)",
+            lineHeight:1,
+          }}>BY TAI ANALYTICS</span>
+        </Link>
+
+        {/* Desktop links */}
+        <ul style={{display:"flex",gap:"32px",listStyle:"none",margin:0,padding:0}} className="nav-desktop">
           {links.map(l=>(
-            <Link key={l.href} href={l.href} onClick={()=>setOpen(false)} style={{fontFamily:"'Cinzel',serif",fontSize:"1.1rem",letterSpacing:".25em",color:"rgba(232,240,248,.7)",textDecoration:"none"}}>{l.label}</Link>
+            <li key={l.href}>
+              <Link href={l.href} style={{
+                fontFamily:"'Cinzel',serif",
+                fontSize:"0.6rem",
+                letterSpacing:".22em",
+                color:"rgba(220,232,245,0.55)",
+                textDecoration:"none",
+                transition:"color .3s",
+              }}
+                onMouseEnter={e=>(e.currentTarget.style.color="#c8a84c")}
+                onMouseLeave={e=>(e.currentTarget.style.color="rgba(220,232,245,0.55)")}
+              >{l.label}</Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile burger */}
+        <button onClick={()=>setOpen(!open)} className="nav-mobile" style={{
+          display:"none",background:"none",border:"none",
+          color:"#c8a84c",fontSize:"1.4rem",cursor:"pointer",lineHeight:1,
+        }}>☰</button>
+      </nav>
+
+      {/* Mobile menu */}
+      {open && (
+        <div style={{
+          position:"fixed",inset:0,background:"rgba(1,2,8,0.98)",
+          zIndex:300,display:"flex",flexDirection:"column",
+          alignItems:"center",justifyContent:"center",gap:"36px",
+        }}>
+          <button onClick={()=>setOpen(false)} style={{
+            position:"absolute",top:"24px",right:"28px",
+            background:"none",border:"none",color:"#c8a84c",
+            fontSize:"1.8rem",cursor:"pointer",
+          }}>✕</button>
+          {links.map(l=>(
+            <Link key={l.href} href={l.href} onClick={()=>setOpen(false)} style={{
+              fontFamily:"'Cinzel',serif",fontSize:"1rem",
+              letterSpacing:".3em",color:"rgba(220,232,245,0.8)",textDecoration:"none",
+            }}>{l.label}</Link>
           ))}
         </div>
       )}
-      <style>{`.hidden-mobile{display:flex}@media(max-width:768px){.hidden-mobile{display:none!important}.show-mobile{display:block!important}}`}</style>
-    </nav>
+
+      <style>{`
+        @media (max-width: 900px) {
+          .nav-desktop { display: none !important; }
+          .nav-mobile { display: block !important; }
+        }
+      `}</style>
+    </>
   );
 }
