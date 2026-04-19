@@ -33,7 +33,7 @@ export function SectionHeader({ eyebrow, title, intro, center = false }: { eyebr
       {intro && <p style={{
         fontSize: "1.12rem",
         fontStyle: "italic",
-        color: "rgba(220,232,245,0.75)",
+        color: "rgba(240,244,248,0.9)",
         lineHeight: 1.95,
         maxWidth: center ? "660px" : "720px",
         margin: center ? "0 auto" : undefined,
@@ -54,7 +54,7 @@ export function EncyclopediaCard({ href, title, category, description, symbol, c
         {symbol && <div style={{ fontSize: "2.4rem", marginBottom: "14px", filter: `drop-shadow(0 0 10px ${color})` }}>{symbol}</div>}
         <div style={{ fontFamily: "'Cinzel',serif", fontSize: "0.58rem", letterSpacing: ".28em", color: "rgba(138,112,48,0.9)", marginBottom: "8px", textTransform: "uppercase" }}>{category}</div>
         <div style={{ fontFamily: "'Cinzel',serif", fontSize: "1rem", letterSpacing: ".1em", color, marginBottom: "12px" }}>{title}</div>
-        <div style={{ fontSize: "0.97rem", lineHeight: 1.75, color: "rgba(220,232,245,0.72)" }}>{description}</div>
+        <div style={{ fontSize: "0.97rem", lineHeight: 1.75, color: "rgba(240,244,248,0.9)" }}>{description}</div>
         <div style={{ marginTop: "20px", fontFamily: "'Cinzel',serif", fontSize: "0.58rem", letterSpacing: ".2em", color: "rgba(138,112,48,0.8)" }}>READ MORE →</div>
       </div>
     </Link>
@@ -99,7 +99,7 @@ export function PageHero({ eyebrow, title, subtitle, body }: { eyebrow: string; 
         maxWidth: "600px",
         fontSize: "1.15rem",
         fontStyle: "italic",
-        color: "rgba(220,232,245,0.72)",
+        color: "rgba(240,244,248,0.9)",
         lineHeight: 1.9,
         textAlign: "center",
       }}>{body}</p>}

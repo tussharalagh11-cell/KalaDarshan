@@ -9,7 +9,7 @@ export default function YogaClient({ yoga: y, prev, next }: { yoga: any; prev: a
         <span style={{ fontFamily: "'Cinzel',serif", fontSize: ".65rem", letterSpacing: ".45em", color: "#6a5820", marginBottom: "16px", display: "block" }}>{y.category.toUpperCase()} YOGA · {y.rarity}</span>
         <h1 style={{ fontFamily: "'Cinzel Decorative',serif", fontSize: "clamp(2rem,6vw,4.5rem)", fontWeight: 700, color: "#f0d878", textShadow: "0 0 60px rgba(200,168,76,.22)", letterSpacing: ".05em", marginBottom: "12px" }}>{y.name}</h1>
         <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".72rem", letterSpacing: ".2em", color: "#3a5870", marginBottom: "28px" }}>{y.sanskrit}</div>
-        <p style={{ maxWidth: "600px", fontSize: "1.15rem", fontStyle: "italic", color: "rgba(232,240,248,.82)", lineHeight: 1.9 }}>{y.shortDesc}</p>
+        <p style={{ maxWidth: "600px", fontSize: "1.15rem", fontStyle: "italic", color: "rgba(240,244,248,0.95)", lineHeight: 1.9 }}>{y.shortDesc}</p>
       </section>
       <GoldDivider />
       <section style={{ background: "linear-gradient(to bottom,#030810,#050d1a)", padding: "80px 0 120px" }}>
@@ -24,7 +24,7 @@ export default function YogaClient({ yoga: y, prev, next }: { yoga: any; prev: a
               <p>{y.depth}</p>
               <div style={{ marginTop: "40px", padding: "32px", background: "rgba(200,168,76,.05)", border: "1px solid rgba(200,168,76,.15)" }}>
                 <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".6rem", letterSpacing: ".25em", color: "#6a5820", marginBottom: "12px" }}>✦ WHAT MOST PRACTITIONERS MISS</div>
-                <p style={{ fontSize: "1rem", fontStyle: "italic", lineHeight: 1.9, color: "rgba(232,240,248,.75)", marginBottom: 0 }}>{y.secretKnowledge}</p>
+                <p style={{ fontSize: "1rem", fontStyle: "italic", lineHeight: 1.9, color: "rgba(240,244,248,0.92)", marginBottom: 0 }}>{y.secretKnowledge}</p>
               </div>
             </ProseKala>
           </RevealSection>

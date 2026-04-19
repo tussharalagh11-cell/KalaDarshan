@@ -24,7 +24,7 @@ export default function LokasPage() {
                   <div style={{width:"36px",height:"36px",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:".9rem",border:`1px solid ${loka.color}`,flexShrink:0,background:"rgba(1,2,8,.8)"}}>{loka.symbol}</div>
                   <div>
                     <div style={{fontFamily:"'Cinzel',serif",fontSize:".72rem",letterSpacing:".12em",color:"#c8a84c",marginBottom:"2px"}}>{loka.name}</div>
-                    <div style={{fontSize:".78rem",fontStyle:"italic",color:"rgba(232,240,248,.35)"}}>{loka.planet} · {loka.house}</div>
+                    <div style={{fontSize:".78rem",fontStyle:"italic",color:"rgba(240,244,248,0.60)"}}>{loka.planet} · {loka.house}</div>
                   </div>
                 </div>
               ))}
@@ -52,8 +52,8 @@ export default function LokasPage() {
                 </div>
                 <div style={{paddingLeft:"40px"}}>
                   <div style={{fontFamily:"'Cinzel',serif",fontSize:".6rem",letterSpacing:".25em",color:"#6a5820",marginBottom:"12px"}}>JYOTISH CONNECTION</div>
-                  <div style={{fontSize:".95rem",lineHeight:1.82,color:"rgba(232,240,248,.55)",marginBottom:"20px"}}>{loka.jyotishConnection}</div>
-                  <div style={{fontSize:".9rem",fontStyle:"italic",lineHeight:1.75,color:"rgba(232,240,248,.38)",borderLeft:"2px solid rgba(200,168,76,.12)",paddingLeft:"16px"}}>{loka.depth}</div>
+                  <div style={{fontSize:".95rem",lineHeight:1.82,color:"rgba(240,244,248,0.80)",marginBottom:"20px"}}>{loka.jyotishConnection}</div>
+                  <div style={{fontSize:".9rem",fontStyle:"italic",lineHeight:1.75,color:"rgba(240,244,248,0.60)",borderLeft:"2px solid rgba(200,168,76,.12)",paddingLeft:"16px"}}>{loka.depth}</div>
                 </div>
               </div>
             </RevealSection>
@@ -64,7 +64,7 @@ export default function LokasPage() {
         <RevealSection>
           <div style={{marginTop:"80px",padding:"60px 48px",border:"1px solid rgba(200,168,76,.1)",background:"rgba(200,168,76,.02)",textAlign:"center"}}>
             <div style={{fontFamily:"'Cinzel',serif",fontSize:".6rem",letterSpacing:".35em",color:"#6a5820",marginBottom:"24px"}}>THE META-TEACHING</div>
-            <p style={{fontSize:"1.2rem",fontStyle:"italic",lineHeight:2.1,color:"rgba(232,240,248,.65)",maxWidth:"680px",margin:"0 auto"}}>
+            <p style={{fontSize:"1.2rem",fontStyle:"italic",lineHeight:2.1,color:"rgba(240,244,248,0.88)",maxWidth:"680px",margin:"0 auto"}}>
               The chart maps what is happening in Bhuloka with extraordinary precision. But the Jyotishi who reads only Bhuloka events is like a physician who reads only symptoms without understanding the physiology. The <em style={{color:"#c8a84c",fontStyle:"normal"}}>cause</em> of every Bhuloka event lies in one of the higher lokas — in Maha Loka's organizing patterns, in Tapa Loka's purification processes, in Jana Loka's creative intelligence descending into form. The vertical reading of the chart is what transforms Jyotish from prediction into wisdom.
             </p>
           </div>

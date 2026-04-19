@@ -51,12 +51,12 @@ export default function Nav() {
                 fontFamily:"'Cinzel',serif",
                 fontSize:"0.6rem",
                 letterSpacing:".22em",
-                color:"rgba(220,232,245,0.55)",
+                color:"rgba(240,244,248,0.75)",
                 textDecoration:"none",
                 transition:"color .3s",
               }}
                 onMouseEnter={e=>(e.currentTarget.style.color="#c8a84c")}
-                onMouseLeave={e=>(e.currentTarget.style.color="rgba(220,232,245,0.55)")}
+                onMouseLeave={e=>(e.currentTarget.style.color="rgba(240,244,248,0.9)")}
               >{l.label}</Link>
             </li>
           ))}
@@ -84,7 +84,7 @@ export default function Nav() {
           {links.map(l=>(
             <Link key={l.href} href={l.href} onClick={()=>setOpen(false)} style={{
               fontFamily:"'Cinzel',serif",fontSize:"1rem",
-              letterSpacing:".3em",color:"rgba(220,232,245,0.8)",textDecoration:"none",
+              letterSpacing:".3em",color:"rgba(240,244,248,0.9)",textDecoration:"none",
             }}>{l.label}</Link>
           ))}
         </div>

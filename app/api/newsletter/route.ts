@@ -9,7 +9,7 @@ export async function POST(req: Request) {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${process.env.RESEND_API_KEY}` },
       body: JSON.stringify({
-        from: "Kala Darshan <dispatch@kaladarshan.com>",
+        from: "Kala Darshan <dispatch@taianalytics.ai>",
         to: [process.env.CONTACT_EMAIL || "tussharalagh11@gmail.com"],
         subject: `New Dispatch Subscriber — ${name} <${email}>`,
         html: `<p style="font-family:Georgia,serif;color:#c8a84c;">New subscriber: <strong>${name}</strong> — ${email}</p>`,
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${process.env.RESEND_API_KEY}` },
       body: JSON.stringify({
-        from: "Kala Darshan <dispatch@kaladarshan.com>",
+        from: "Kala Darshan <dispatch@taianalytics.ai>",
         to: [email],
         subject: "Welcome to the Kala Darshan Dispatch",
         html: `

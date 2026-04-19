@@ -33,7 +33,7 @@ export default function NewsletterPage() {
           KALA DARSHAN DISPATCH
           <span style={{ display: "block", fontFamily: "'Cinzel',serif", fontSize: ".3em", letterSpacing: ".35em", color: "#3a5870", marginTop: "18px", fontWeight: 400, textShadow: "none" }}>MONTHLY DISPATCH</span>
         </h1>
-        <p style={{ maxWidth: "540px", fontSize: "1.1rem", fontStyle: "italic", color: "rgba(232,240,248,.62)", lineHeight: 1.95 }}>
+        <p style={{ maxWidth: "540px", fontSize: "1.1rem", fontStyle: "italic", color: "rgba(240,244,248,0.88)", lineHeight: 1.95 }}>
           Deep Jyotish knowledge delivered with the seriousness and precision the tradition deserves. Not predictions. Not horoscopes. The living knowledge that makes Jyotish a complete cosmological science.
         </p>
       </section>
@@ -47,13 +47,13 @@ export default function NewsletterPage() {
                 {topics.map((t, i) => (
                   <div key={i} style={{ display: "flex", gap: "16px", padding: "16px 0", borderBottom: "1px solid rgba(255,255,255,.03)", alignItems: "flex-start" }}>
                     <span style={{ color: "#6a5820", fontFamily: "'Cinzel',serif", fontSize: ".7rem", flexShrink: 0, marginTop: "2px" }}>✦</span>
-                    <span style={{ fontSize: ".98rem", color: "rgba(232,240,248,.62)", lineHeight: 1.6 }}>{t}</span>
+                    <span style={{ fontSize: ".98rem", color: "rgba(240,244,248,0.88)", lineHeight: 1.6 }}>{t}</span>
                   </div>
                 ))}
               </div>
               <div style={{ marginTop: "32px", padding: "24px", background: "rgba(200,168,76,.03)", border: "1px solid rgba(200,168,76,.1)" }}>
                 <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".58rem", letterSpacing: ".2em", color: "#6a5820", marginBottom: "10px" }}>FREQUENCY</div>
-                <div style={{ fontSize: ".95rem", fontStyle: "italic", color: "rgba(232,240,248,.55)", lineHeight: 1.7 }}>Monthly — aligned with significant lunar or planetary cycles where possible. Quality over frequency.</div>
+                <div style={{ fontSize: ".95rem", fontStyle: "italic", color: "rgba(240,244,248,0.80)", lineHeight: 1.7 }}>Monthly — aligned with significant lunar or planetary cycles where possible. Quality over frequency.</div>
               </div>
             </RevealSection>
             <RevealSection delay={150}>
@@ -61,7 +61,7 @@ export default function NewsletterPage() {
                 <div style={{ padding: "60px 40px", border: "1px solid rgba(200,168,76,.2)", background: "rgba(200,168,76,.03)", textAlign: "center" }}>
                   <div style={{ fontSize: "2rem", marginBottom: "20px" }}>✦</div>
                   <div style={{ fontFamily: "'Cinzel',serif", fontSize: "1rem", letterSpacing: ".15em", color: "#c8a84c", marginBottom: "12px" }}>WELCOME</div>
-                  <p style={{ fontSize: ".95rem", fontStyle: "italic", color: "rgba(232,240,248,.58)", lineHeight: 1.8 }}>You are now part of the Kala Darshan community. The first dispatch arrives at the next lunar cycle milestone.</p>
+                  <p style={{ fontSize: ".95rem", fontStyle: "italic", color: "rgba(240,244,248,0.80)", lineHeight: 1.8 }}>You are now part of the Kala Darshan community. The first dispatch arrives at the next lunar cycle milestone.</p>
                 </div>
               ) : (
                 <>

@@ -33,12 +33,12 @@ export default function ConsultPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(260px,1fr))", gap: "1px", marginBottom: "80px" }}>
             {readingTypes.map(r => (
               <div key={r.id} onClick={() => setForm(f => ({ ...f, type: r.id }))} style={{ padding: "32px 24px", background: form.type === r.id ? "rgba(200,168,76,.06)" : "rgba(255,255,255,.012)", border: `1px solid ${form.type === r.id ? "rgba(200,168,76,.4)" : "rgba(255,255,255,.04)"}`, cursor: "none", transition: "all .3s" }}>
-                <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".85rem", letterSpacing: ".1em", color: form.type === r.id ? "#c8a84c" : "rgba(232,240,248,.75)", marginBottom: "8px" }}>{r.label}</div>
+                <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".85rem", letterSpacing: ".1em", color: form.type === r.id ? "#c8a84c" : "rgba(240,244,248,0.92)", marginBottom: "8px" }}>{r.label}</div>
                 <div style={{ display: "flex", gap: "16px", marginBottom: "14px" }}>
                   <span style={{ fontFamily: "'Cinzel',serif", fontSize: ".58rem", letterSpacing: ".12em", color: "#6a5820" }}>{r.duration}</span>
                   <span style={{ fontFamily: "'Cinzel',serif", fontSize: ".58rem", letterSpacing: ".12em", color: "#c8a84c" }}>{r.price}</span>
                 </div>
-                <div style={{ fontSize: ".9rem", lineHeight: 1.72, color: "rgba(232,240,248,.55)" }}>{r.desc}</div>
+                <div style={{ fontSize: ".9rem", lineHeight: 1.72, color: "rgba(240,244,248,0.80)" }}>{r.desc}</div>
               </div>
             ))}
           </div>
@@ -50,7 +50,7 @@ export default function ConsultPage() {
             <div style={{ textAlign: "center", padding: "80px 40px", border: "1px solid rgba(200,168,76,.2)", background: "rgba(200,168,76,.03)" }}>
               <div style={{ fontSize: "2rem", marginBottom: "20px" }}>✦</div>
               <div style={{ fontFamily: "'Cinzel',serif", fontSize: "1.1rem", letterSpacing: ".15em", color: "#c8a84c", marginBottom: "12px" }}>REQUEST RECEIVED</div>
-              <p style={{ fontSize: "1rem", fontStyle: "italic", color: "rgba(232,240,248,.62)", lineHeight: 1.8 }}>I will review your birth details and respond within 48 hours to confirm the reading and arrange payment.</p>
+              <p style={{ fontSize: "1rem", fontStyle: "italic", color: "rgba(240,244,248,0.88)", lineHeight: 1.8 }}>I will review your birth details and respond within 48 hours to confirm the reading and arrange payment.</p>
             </div>
           ) : (
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px" }}>

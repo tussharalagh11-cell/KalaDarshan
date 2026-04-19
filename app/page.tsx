@@ -15,7 +15,7 @@ export default function Home() {
           KALA<br/>DARSHAN
           <span style={{display:"block",fontFamily:"'Cinzel',serif",fontSize:".28em",letterSpacing:".4em",color:"#3a5870",marginTop:"24px",fontWeight:400,textShadow:"none"}}>काल दर्शन · VISION OF COSMIC TIME</span>
         </h1>
-        <p style={{marginTop:"56px",maxWidth:"580px",fontSize:"clamp(1.05rem,2vw,1.3rem)",fontStyle:"italic",color:"rgba(232,240,248,.65)",lineHeight:1.9,animation:"fade-up 2s .5s ease both"}}>
+        <p style={{marginTop:"56px",maxWidth:"580px",fontSize:"clamp(1.05rem,2vw,1.3rem)",fontStyle:"italic",color:"rgba(240,244,248,0.88)",lineHeight:1.9,animation:"fade-up 2s .5s ease both"}}>
           The planets do not <em style={{color:"#c8a84c",fontStyle:"normal"}}>cause</em> your life.<br/>
           They reveal what is already written<br/>
           in the deep grammar of your karma.
@@ -44,7 +44,7 @@ export default function Home() {
       <RevealSection>
         <section style={{background:"linear-gradient(to bottom,#010208,#030810)"}}>
           <div style={{maxWidth:"780px",margin:"0 auto",textAlign:"center",padding:"120px 40px"}}>
-            <p style={{fontSize:"clamp(1.3rem,3vw,2rem)",fontStyle:"italic",lineHeight:2.2,color:"rgba(232,240,248,.68)"}}>
+            <p style={{fontSize:"clamp(1.3rem,3vw,2rem)",fontStyle:"italic",lineHeight:2.2,color:"rgba(240,244,248,0.88)"}}>
               "The entire cosmos is a single organism.<br/>
               <em style={{color:"#f0d878",fontStyle:"normal",display:"block",fontSize:"1.15em",margin:"16px 0"}}>You are not in it. It is in you.</em>
               The birth chart is not a map of your fate —<br/>
@@ -64,7 +64,7 @@ export default function Home() {
           <RevealSection>
             <span className="eyebrow">I — THE NINE COSMIC INTELLIGENCES</span>
             <h2 style={{fontFamily:"'Cinzel',serif",fontSize:"clamp(1.8rem,4vw,3rem)",fontWeight:600,color:"#c8a84c",marginBottom:"16px"}}>Nava Graha</h2>
-            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(232,240,248,.65)",lineHeight:1.95,maxWidth:"700px",marginBottom:"60px"}}>
+            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(240,244,248,0.88)",lineHeight:1.95,maxWidth:"700px",marginBottom:"60px"}}>
               Graha means "that which seizes." Each planet is a cosmic intelligence — a focused expression of divine consciousness seizing a specific domain of human existence with precise, karmic grip. Their natures go far beyond what modern astrology teaches.
             </p>
           </RevealSection>
@@ -93,7 +93,7 @@ export default function Home() {
           <RevealSection>
             <span className="eyebrow">II — THE VERTICAL COSMOS</span>
             <h2 style={{fontFamily:"'Cinzel',serif",fontSize:"clamp(1.8rem,4vw,3rem)",fontWeight:600,color:"#c8a84c",marginBottom:"16px"}}>The Architecture of Existence</h2>
-            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(232,240,248,.65)",lineHeight:1.95,maxWidth:"680px",marginBottom:"60px"}}>
+            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(240,244,248,0.88)",lineHeight:1.95,maxWidth:"680px",marginBottom:"60px"}}>
               Reality is not flat. The Vedic cosmos is a vertical structure of nested planes — each operating at a distinct frequency of consciousness. The birth chart is a cross-section through all of them simultaneously.
             </p>
           </RevealSection>
@@ -105,7 +105,7 @@ export default function Home() {
                   <div style={{textAlign:"right",paddingRight:"32px"}}>
                     <div style={{fontFamily:"'Cinzel',serif",fontSize:".85rem",letterSpacing:".15em",color:"#c8a84c",marginBottom:"4px"}}>{loka.name}</div>
                     <div style={{fontSize:".78rem",fontStyle:"italic",color:"rgba(232,240,248,.3)",marginBottom:"8px"}}>{loka.sanskrit}</div>
-                    <div style={{fontSize:".92rem",lineHeight:1.7,color:"rgba(232,240,248,.58)"}}>{loka.description.slice(0,120)}…</div>
+                    <div style={{fontSize:".92rem",lineHeight:1.7,color:"rgba(240,244,248,0.80)"}}>{loka.description.slice(0,120)}…</div>
                   </div>
                   <div style={{display:"flex",alignItems:"center",justifyContent:"center",zIndex:2}}>
                     <div style={{width:"56px",height:"56px",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"1.2rem",border:`1px solid ${loka.color}`,background:`radial-gradient(circle at 35% 35%,rgba(200,168,76,.1),rgba(1,2,8,.95))`,boxShadow:`0 0 20px rgba(200,168,76,.12)`}}>
@@ -138,7 +138,7 @@ export default function Home() {
           <RevealSection>
             <span className="eyebrow">III — THE RIVER OF TIME</span>
             <h2 style={{fontFamily:"'Cinzel',serif",fontSize:"clamp(1.8rem,4vw,3rem)",fontWeight:600,color:"#c8a84c",marginBottom:"16px"}}>Vimshottari Dasha</h2>
-            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(232,240,248,.65)",lineHeight:1.95,maxWidth:"700px",marginBottom:"60px"}}>
+            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(240,244,248,0.88)",lineHeight:1.95,maxWidth:"700px",marginBottom:"60px"}}>
               A 120-year cycle of planetary rulership determined by the Moon's nakshatra at birth. Time is not uniform — it has a texture, a ruler, a quality. The same external event experienced in different dashas produces completely different inner and outer results.
             </p>
           </RevealSection>
@@ -154,8 +154,8 @@ export default function Home() {
                     <div style={{fontFamily:"'Cinzel',serif",fontSize:".58rem",letterSpacing:".1em",color:"rgba(232,240,248,.3)"}}>YEARS</div>
                   </div>
                   <div>
-                    <div style={{fontFamily:"'Cinzel',serif",fontSize:"1rem",color:"rgba(232,240,248,.85)",marginBottom:"10px"}}>{d.essence}</div>
-                    <div style={{fontSize:".95rem",lineHeight:1.8,color:"rgba(232,240,248,.58)"}}>{d.description}</div>
+                    <div style={{fontFamily:"'Cinzel',serif",fontSize:"1rem",color:"rgba(240,244,248,0.95)",marginBottom:"10px"}}>{d.essence}</div>
+                    <div style={{fontSize:".95rem",lineHeight:1.8,color:"rgba(240,244,248,0.80)"}}>{d.description}</div>
                   </div>
                 </div>
               </RevealSection>
@@ -179,7 +179,7 @@ export default function Home() {
           <RevealSection>
             <span className="eyebrow">IV — HIDDEN COMBINATIONS</span>
             <h2 style={{fontFamily:"'Cinzel',serif",fontSize:"clamp(1.8rem,4vw,3rem)",fontWeight:600,color:"#c8a84c",marginBottom:"16px"}}>The Yogas</h2>
-            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(232,240,248,.65)",lineHeight:1.95,maxWidth:"700px",marginBottom:"60px"}}>
+            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(240,244,248,0.88)",lineHeight:1.95,maxWidth:"700px",marginBottom:"60px"}}>
               A yoga is a planetary combination producing results beyond the sum of its parts. Most charts contain yogas the native never discovers. This is the secret knowledge of Jyotish — not what planets mean individually, but what they produce when they conspire.
             </p>
           </RevealSection>
@@ -208,7 +208,7 @@ export default function Home() {
           <div style={{maxWidth:"720px",margin:"0 auto"}}>
             <span className="eyebrow">THE COMPLETE KNOWLEDGE</span>
             <h2 style={{fontFamily:"'Cinzel',serif",fontSize:"clamp(1.8rem,4vw,2.8rem)",fontWeight:600,color:"#c8a84c",marginBottom:"24px"}}>The Encyclopedia</h2>
-            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(232,240,248,.65)",lineHeight:1.95,marginBottom:"48px"}}>
+            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(240,244,248,0.88)",lineHeight:1.95,marginBottom:"48px"}}>
               Ashtakavarga. Divisional Charts. Muhurta. Brihat Parashara deep dives. Remedial measures. The 12 Bhavas at their metaphysical depth. Purusha and Prakriti. The nature of consciousness itself. Knowledge that has never been assembled in one place on the internet.
             </p>
             <Link href="/encyclopedia" style={{fontFamily:"'Cinzel',serif",fontSize:".7rem",letterSpacing:".25em",padding:"18px 48px",border:"1px solid #6a5820",color:"#c8a84c",textDecoration:"none",display:"inline-block",transition:"all .3s"}}
@@ -228,7 +228,7 @@ export default function Home() {
           <div style={{maxWidth:"640px",margin:"0 auto"}}>
             <span className="eyebrow">PERSONAL READINGS</span>
             <h2 style={{fontFamily:"'Cinzel',serif",fontSize:"clamp(1.8rem,4vw,2.8rem)",fontWeight:600,color:"#c8a84c",marginBottom:"24px"}}>Book a Consultation</h2>
-            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(232,240,248,.65)",lineHeight:1.95,marginBottom:"16px"}}>
+            <p style={{fontSize:"1.1rem",fontStyle:"italic",color:"rgba(240,244,248,0.88)",lineHeight:1.95,marginBottom:"16px"}}>
               A complete chart reading that goes beyond prediction — into the metaphysical architecture of your specific karma, the timing of your current dasha, the yogas that are active or approaching, and the cosmic context of your present moment.
             </p>
             <p style={{fontSize:".95rem",fontStyle:"italic",color:"rgba(232,240,248,.4)",lineHeight:1.9,marginBottom:"48px"}}>
@@ -240,9 +240,9 @@ export default function Home() {
                 onMouseLeave={e=>{(e.currentTarget as HTMLAnchorElement).style.background="transparent";(e.currentTarget as HTMLAnchorElement).style.color="#c8a84c";}}>
                 BOOK A READING
               </Link>
-              <Link href="/newsletter" style={{fontFamily:"'Cinzel',serif",fontSize:".65rem",letterSpacing:".22em",padding:"16px 36px",border:"1px solid rgba(255,255,255,.06)",color:"rgba(232,240,248,.45)",textDecoration:"none",display:"inline-block",transition:"all .3s"}}
-                onMouseEnter={e=>{(e.currentTarget as HTMLAnchorElement).style.borderColor="rgba(255,255,255,.15)";(e.currentTarget as HTMLAnchorElement).style.color="rgba(232,240,248,.75)";}}
-                onMouseLeave={e=>{(e.currentTarget as HTMLAnchorElement).style.borderColor="rgba(255,255,255,.06)";(e.currentTarget as HTMLAnchorElement).style.color="rgba(232,240,248,.45)";}}>
+              <Link href="/newsletter" style={{fontFamily:"'Cinzel',serif",fontSize:".65rem",letterSpacing:".22em",padding:"16px 36px",border:"1px solid rgba(255,255,255,.06)",color:"rgba(240,244,248,0.72)",textDecoration:"none",display:"inline-block",transition:"all .3s"}}
+                onMouseEnter={e=>{(e.currentTarget as HTMLAnchorElement).style.borderColor="rgba(255,255,255,.15)";(e.currentTarget as HTMLAnchorElement).style.color="rgba(240,244,248,0.92)";}}
+                onMouseLeave={e=>{(e.currentTarget as HTMLAnchorElement).style.borderColor="rgba(255,255,255,.06)";(e.currentTarget as HTMLAnchorElement).style.color="rgba(240,244,248,0.72)";}}>
                 JOIN THE NEWSLETTER
               </Link>
             </div>
@@ -256,7 +256,7 @@ export default function Home() {
           <div style={{fontSize:"clamp(1.8rem,5vw,3.5rem)",color:"rgba(200,168,76,.1)",lineHeight:1.4,marginBottom:"32px",fontWeight:300}}>
             ज्योतिषां ज्योतिः<br/>तमसः परम्
           </div>
-          <p style={{fontSize:"1.1rem",fontStyle:"italic",lineHeight:2,color:"rgba(232,240,248,.45)"}}>
+          <p style={{fontSize:"1.1rem",fontStyle:"italic",lineHeight:2,color:"rgba(240,244,248,0.72)"}}>
             "The light of all lights —<br/>
             <em style={{color:"#c8a84c",fontStyle:"normal"}}>that which lies beyond all darkness.</em>"
           </p>

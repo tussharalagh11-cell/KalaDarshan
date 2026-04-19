@@ -40,11 +40,11 @@ export default function NakshatrasPage() {
                   >
                     <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".62rem", color: "#6a5820" }}>{String(n.num).padStart(2, "0")}</div>
                     <div>
-                      <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".88rem", letterSpacing: ".1em", color: "rgba(232,240,248,.75)", marginBottom: "2px" }}>{n.name}</div>
+                      <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".88rem", letterSpacing: ".1em", color: "rgba(240,244,248,0.92)", marginBottom: "2px" }}>{n.name}</div>
                       <div style={{ fontSize: ".75rem", fontStyle: "italic", color: "rgba(232,240,248,.3)" }}>{n.sanskrit}</div>
                     </div>
                     <div style={{ fontSize: ".8rem", color: "rgba(232,240,248,.4)" }}>{n.ruler} · {n.deity}</div>
-                    <div style={{ fontSize: ".88rem", color: "rgba(232,240,248,.52)", lineHeight: 1.5 }}>{n.shortDesc}</div>
+                    <div style={{ fontSize: ".88rem", color: "rgba(240,244,248,0.80)", lineHeight: 1.5 }}>{n.shortDesc}</div>
                     <div style={{ textAlign: "right" }}>
                       <span style={{ fontFamily: "'Cinzel',serif", fontSize: ".52rem", letterSpacing: ".15em", color: "#6a5820", padding: "4px 10px", border: "1px solid rgba(200,168,76,.15)", borderRadius: "12px" }}>{n.guna}</span>
                     </div>

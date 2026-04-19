@@ -40,9 +40,9 @@ export default function GrahasPage() {
                       { p: "Saturn",  row: ["E","E","E","F","N","F","—"] },
                     ].map(row => (
                       <tr key={row.p} style={{ borderBottom: "1px solid rgba(255,255,255,.02)" }}>
-                        <td style={{ padding: "10px 14px", color: "rgba(232,240,248,.65)", letterSpacing: ".08em" }}>{row.p}</td>
+                        <td style={{ padding: "10px 14px", color: "rgba(240,244,248,0.88)", letterSpacing: ".08em" }}>{row.p}</td>
                         {row.row.map((v, i) => (
-                          <td key={i} style={{ padding: "10px 14px", textAlign: "center", color: v === "F" ? "#c8a84c" : v === "E" ? "#c84830" : "rgba(232,240,248,.35)", letterSpacing: ".08em" }}>
+                          <td key={i} style={{ padding: "10px 14px", textAlign: "center", color: v === "F" ? "#c8a84c" : v === "E" ? "#c84830" : "rgba(240,244,248,0.60)", letterSpacing: ".08em" }}>
                             {v === "F" ? "Friend" : v === "E" ? "Enemy" : v === "N" ? "Neutral" : "—"}
                           </td>
                         ))}

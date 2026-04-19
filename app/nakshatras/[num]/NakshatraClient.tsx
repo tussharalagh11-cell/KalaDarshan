@@ -9,7 +9,7 @@ export default function NakshatraClient({ nakshatra: n, prev, next }: { nakshatr
         <span style={{ fontFamily: "'Cinzel',serif", fontSize: ".65rem", letterSpacing: ".45em", color: "#6a5820", marginBottom: "20px", display: "block" }}>NAKSHATRA {String(n.num).padStart(2,"0")} OF 27 · {n.degrees}</span>
         <h1 style={{ fontFamily: "'Cinzel Decorative',serif", fontSize: "clamp(2.5rem,8vw,5.5rem)", fontWeight: 700, color: "#f0d878", textShadow: "0 0 60px rgba(200,168,76,.22)", letterSpacing: ".06em", marginBottom: "16px" }}>{n.name.toUpperCase()}</h1>
         <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".72rem", letterSpacing: ".2em", color: "#3a5870", marginBottom: "32px" }}>{n.sanskrit} · {n.ruler} · {n.deity}</div>
-        <p style={{ maxWidth: "580px", fontSize: "1.2rem", fontStyle: "italic", color: "rgba(232,240,248,.82)", lineHeight: 1.9 }}>{n.shortDesc}</p>
+        <p style={{ maxWidth: "580px", fontSize: "1.2rem", fontStyle: "italic", color: "rgba(240,244,248,0.95)", lineHeight: 1.9 }}>{n.shortDesc}</p>
       </section>
       <GoldDivider />
       <section style={{ background: "linear-gradient(to bottom,#030810,#050d1a)", padding: "80px 0 120px" }}>

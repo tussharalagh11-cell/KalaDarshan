@@ -439,6 +439,6 @@ export const siteConfig = {
   name: "Kala Darshan",
   tagline: "काल दर्शन · Vision of Cosmic Time",
   description: "A complete encyclopedia of Jyotish and Vedic cosmology. Grahas, Nakshatras, Yogas, Dashas, Lokas, Karma, Kala, Purusha — the deepest knowledge of the Vedic astrological tradition, presented for the serious student.",
-  email: "hello@kaladarshan.com",
+  email: "kaladarshan@taianalytics.ai",
   instagram: "@kaladarshan",
 };

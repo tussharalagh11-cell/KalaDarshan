@@ -9,7 +9,7 @@ export default function GrahaClient({ graha: g, prev, next }: { graha: any; prev
         <div style={{ fontSize: "5rem", filter: `drop-shadow(0 0 30px ${g.color})`, marginBottom: "24px" }}>{g.symbol}</div>
         <span style={{ fontFamily: "'Cinzel',serif", fontSize: ".65rem", letterSpacing: ".45em", color: "#6a5820", marginBottom: "20px", display: "block" }}>{g.sanskrit} · {g.english} · {g.dashaYears}-YEAR MAHADASHA</span>
         <h1 style={{ fontFamily: "'Cinzel Decorative',serif", fontSize: "clamp(2.5rem,8vw,5.5rem)", fontWeight: 700, color: g.color, textShadow: `0 0 60px ${g.color}40`, letterSpacing: ".06em", marginBottom: "28px" }}>{g.name.toUpperCase()}</h1>
-        <p style={{ maxWidth: "580px", fontSize: "1.2rem", fontStyle: "italic", color: "rgba(232,240,248,.82)", lineHeight: 1.9 }}>{g.shortDescription}</p>
+        <p style={{ maxWidth: "580px", fontSize: "1.2rem", fontStyle: "italic", color: "rgba(240,244,248,0.95)", lineHeight: 1.9 }}>{g.shortDescription}</p>
       </section>
       <GoldDivider />
       <section style={{ background: "linear-gradient(to bottom,#030810,#050d1a)", padding: "80px 0 120px" }}>
@@ -66,7 +66,7 @@ export default function GrahaClient({ graha: g, prev, next }: { graha: any; prev
                 {g.encyclopediaEntry.rahuKalapurusha && <><h3>Maya Purusha</h3><p>{g.encyclopediaEntry.rahuKalapurusha}</p></>}
                 <div style={{ marginTop: "40px", padding: "28px 24px", background: "rgba(200,168,76,.05)", border: "1px solid rgba(200,168,76,.15)" }}>
                   <div style={{ fontFamily: "'Cinzel',serif", fontSize: ".6rem", letterSpacing: ".25em", color: "#6a5820", marginBottom: "12px" }}>✦ SECRET KNOWLEDGE</div>
-                  <p style={{ fontSize: "1rem", fontStyle: "italic", lineHeight: 1.85, color: "rgba(232,240,248,.75)", marginBottom: 0 }}>{g.encyclopediaEntry.secretKnowledge}</p>
+                  <p style={{ fontSize: "1rem", fontStyle: "italic", lineHeight: 1.85, color: "rgba(240,244,248,0.92)", marginBottom: 0 }}>{g.encyclopediaEntry.secretKnowledge}</p>
                 </div>
               </ProseKala>
             </RevealSection>

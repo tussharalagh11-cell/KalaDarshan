@@ -19,8 +19,8 @@ export async function POST(req: Request) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Kala Darshan <readings@kaladarshan.com>",
-        to: [process.env.CONTACT_EMAIL || "tussharalagh11@gmail.com"],
+        from: "Kala Darshan <readings@taianalytics.ai>",
+        to: [process.env.CONTACT_EMAIL || "tussharalagh11@gmail.com", "kaladarshan@taianalytics.ai"],
         reply_to: email,
         subject: `New Reading Request — ${name} — ${readingLabels[type] || type}`,
         html: `

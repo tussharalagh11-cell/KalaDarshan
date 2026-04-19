@@ -81,7 +81,7 @@ export default function EncyclopediaClient({ topic, prev, next, slug }: { topic:
       <section style={{ minHeight: "55vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "140px 24px 80px", background: "linear-gradient(to bottom,#010208,#030810)" }}>
         <span style={{ fontFamily: "'Cinzel',serif", fontSize: ".65rem", letterSpacing: ".45em", color: "#6a5820", marginBottom: "16px", display: "block" }}>{topic.category.toUpperCase()} · ENCYCLOPEDIA</span>
         <h1 style={{ fontFamily: "'Cinzel Decorative',serif", fontSize: "clamp(1.8rem,5vw,3.8rem)", fontWeight: 700, color: "#f0d878", textShadow: "0 0 60px rgba(200,168,76,.2)", letterSpacing: ".04em", marginBottom: "28px", maxWidth: "800px" }}>{topic.title.toUpperCase()}</h1>
-        <p style={{ maxWidth: "640px", fontSize: "1.15rem", fontStyle: "italic", color: "rgba(232,240,248,.78)", lineHeight: 1.9 }}>{topic.description}</p>
+        <p style={{ maxWidth: "640px", fontSize: "1.15rem", fontStyle: "italic", color: "rgba(240,244,248,0.92)", lineHeight: 1.9 }}>{topic.description}</p>
       </section>
       <GoldDivider />
       <section style={{ background: "linear-gradient(to bottom,#030810,#050d1a)", padding: "80px 0 120px" }}>
