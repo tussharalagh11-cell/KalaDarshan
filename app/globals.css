@@ -10,14 +10,34 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: #010208; }
 
 body {
-  background: #010208;
+  background: #010208 !important;
   color: #e8f0f8;
   font-family: 'Cormorant Garamond', serif;
   cursor: none;
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Force dark on all page content */
+main > * {
+  background-color: #010208;
+}
+
+/* But allow gradient overrides on sections */
+main section {
+  background-color: transparent;
+}
+
+/* Solid dark base layer behind canvas */
+html::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: #010208;
+  z-index: -1;
 }
 
 /* Grain overlay */
@@ -89,7 +109,7 @@ body::after {
 .prose-kala {
   font-size: 1.08rem;
   line-height: 2;
-  color: rgba(232,240,248,0.72);
+  color: rgba(232,240,248,0.82);
 }
 .prose-kala h3 {
   font-family: 'Cinzel', serif;
@@ -98,14 +118,14 @@ body::after {
   letter-spacing: 0.12em;
   margin: 2rem 0 0.75rem;
 }
-.prose-kala p { margin-bottom: 1.4rem; }
+.prose-kala p { margin-bottom: 1.4rem; color: rgba(232,240,248,0.78); }
 .prose-kala em { color: #c8a84c; font-style: normal; }
 .prose-kala blockquote {
   padding: 20px 24px;
   border-left: 2px solid #6a5820;
   margin: 2rem 0;
   font-style: italic;
-  color: rgba(232,240,248,0.6);
+  color: rgba(232,240,248,0.65);
 }
 .prose-kala blockquote cite {
   display: block;

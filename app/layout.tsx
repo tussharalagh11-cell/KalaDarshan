@@ -5,8 +5,8 @@ import CosmosCanvas from "@/components/CosmosCanvas";
 import Cursor from "@/components/Cursor";
 
 export const metadata: Metadata = {
-  title: "Kala Darshan — Vision of Cosmic Time",
-  description: "A complete encyclopedia of Jyotish and Vedic cosmology. Grahas, Nakshatras, Yogas, Dashas, Lokas, Karma, Kala — the deepest knowledge of the Vedic tradition.",
+  title: "Kala Darshan by TAI Analytics — Vision of Cosmic Time",
+  description: "A complete encyclopedia of Jyotish and Vedic cosmology by TAI Analytics. Grahas, Nakshatras, Yogas, Dashas, Lokas, Karma, Kala — the deepest knowledge of the Vedic tradition.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

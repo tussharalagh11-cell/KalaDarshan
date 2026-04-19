@@ -16,8 +16,9 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   return (
     <nav style={{position:"fixed",top:0,left:0,right:0,zIndex:200,display:"flex",alignItems:"center",justifyContent:"space-between",padding:"20px 48px",background:"linear-gradient(to bottom,rgba(1,2,8,.96),transparent)",backdropFilter:"blur(6px)"}}>
-      <Link href="/" style={{fontFamily:"'Cinzel Decorative',serif",fontSize:"1rem",color:"#c8a84c",letterSpacing:".18em",textDecoration:"none",textShadow:"0 0 24px rgba(200,168,76,.35)"}}>
+      <Link href="/" style={{fontFamily:"'Cinzel Decorative',serif",fontSize:".95rem",color:"#c8a84c",letterSpacing:".18em",textDecoration:"none",textShadow:"0 0 24px rgba(200,168,76,.35)"}}>
         KALA DARSHAN
+        <span style={{display:"block",fontFamily:"'Cinzel',serif",fontSize:".45rem",letterSpacing:".25em",color:"#3a5870",marginTop:"2px",fontWeight:400}}>BY TAI ANALYTICS</span>
       </Link>
       {/* Desktop */}
       <ul style={{display:"flex",gap:"24px",listStyle:"none",margin:0,padding:0}} className="hidden-mobile">
